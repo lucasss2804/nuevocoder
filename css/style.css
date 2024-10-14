@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+
+    
+}
+.titulo{
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    text-shadow: -5px 4px 8px rgba(0,0,0,0.63);
+}
+/* BARRA DE NAVEGACION */
+.bc{
+    height: 3rem;
+}
+.navbar{
+    background-color: #17202a;
+}
+.nav-link{
+    color:white
+}
+.collapse{
+    justify-content: end;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+/* SUBTITULOS */
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.noticias, .banner{
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+}
+footer{
+    background-color: #17202a;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin-right: 20px;
+    
+
+}
+.destacados{
+    justify-content: space-around;
+}
+.icon{
+    height: 3rem;
+    border: 2px white;
+
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.card-img-top{
+padding-top: 5px;
+}
