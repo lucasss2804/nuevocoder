@@ -6,14 +6,11 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
 }
-body{
+body{ 
     background-color: white;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 80px;
-
-    
-}
+    padding-bottom: 80px;}
 .titulo{
     text-align: center;
     font-size: 6rem;
@@ -62,6 +59,7 @@ footer{
 }
 .destacados{
     justify-content: space-around;
+    padding-top: 8px;
 }
 .icon{
     height: 3rem;
@@ -74,4 +72,44 @@ footer{
 }
 .card-img-top{
 padding-top: 5px;
+}
+.card-squad{
+    border-radius: 200px;
+   
+}
+.plantilla{
+    justify-content: space-around;
+    padding-top: 8px;
+}
+.plantilla div{
+    border: none;
+}
+.card-body{
+    text-align: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 400px; 
+    margin: auto; 
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    width: 100%; 
+    max-width: 100%; 
+  }
+    
+.dejanos{
+    display: flex;
+    justify-content: center;
+}
+.titulo {
+    margin: 0; /* Elimina márgenes del título */
+    padding: 0; /* Elimina padding si es necesario */
+}
+.cont-carousel {
+    border: 0.7rem solid #17202a ; /* Color y grosor del borde */
+    
 }
