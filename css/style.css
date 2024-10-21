@@ -10,12 +10,15 @@ body{
     background-color: white;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 80px;}
+    padding-bottom: 80px;   
+} 
 .titulo{
     text-align: center;
-    font-size: 6rem;
-    color: white;
-    text-shadow: -5px 4px 8px rgba(0,0,0,0.63);
+    font-size: 6em; /* Tamaño más grande */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
 }
 /* BARRA DE NAVEGACION */
 .bc{
@@ -41,8 +44,17 @@ body{
     padding: 5px;
 }
 .noticias, .banner{
-    background-image: url(../img/banner.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
     background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #17202a9d 120%), url(../img/banner.jpg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+       
 }
 footer{
     background-color: #17202a;
@@ -104,12 +116,16 @@ padding-top: 5px;
 .dejanos{
     display: flex;
     justify-content: center;
-}
-.titulo {
-    margin: 0; /* Elimina márgenes del título */
-    padding: 0; /* Elimina padding si es necesario */
+    padding-top: 5px;
 }
 .cont-carousel {
-    border: 0.7rem solid #17202a ; /* Color y grosor del borde */
+    border: 0.7rem solid #17202a ; 
     
+}
+.ventas{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
