@@ -1,3 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
 
+body {
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 6em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+/* BARRA DE NAVEGACION */
+.bc {
+  height: 3rem;
+}
+
+.navbar {
+  background-color: #17202a;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .collapse {
+  justify-content: end;
+}
+.navbar .navbar-toggler {
+  background-color: white;
+}
+
+/* SUBTITULOS */
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.noticias,
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(23, 32, 42, 0.6156862745) 120%), url(../img/banner.jpg);
+  filter: brightness(0.9);
+}
+
+footer {
+  background-color: #17202a;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.destacados {
+  justify-content: space-around;
+  padding-top: 8px;
+}
+
+.icon {
+  height: 3rem;
+  border: 2px white;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  padding-top: 5px;
+}
+
+.card-squad {
+  border-radius: 200px;
+}
+
+.plantilla {
+  justify-content: space-around;
+  padding-top: 8px;
+}
+.plantilla div {
+  border: none;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+.dejanos {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.cont-carousel {
+  border: 0.7rem solid #17202a;
+}
+
+.ventas {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,8 +1,165 @@
-@import "./partials/variables";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+// Variables
+$font-family: "Bebas Neue", sans-serif;
+$font-size: 20px;
+$background-color: white;
+$navbar-bg: #17202a;
+$text-color: white;
+$shadow-color: rgba(0, 0, 0, 0.7);
+$banner-bg: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #17202a9d 120%), url(../img/banner.jpg);
+$footer-height: 80px;
+$icon-height: 3rem;
+$border-color: #17202a;
 
-@import "./partials/footer-header";
-@import "./partials/index";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+body {
+  background-color: $background-color;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 6em; // Tamaño más grande
+  text-shadow: 2px 2px 8px $shadow-color;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+/* BARRA DE NAVEGACION */
+.bc {
+  height: 3rem;
+}
+
+.navbar {
+  background-color: $navbar-bg;
+
+  .nav-link {
+    color: $text-color;
+  }
+
+  .collapse {
+    justify-content: end;
+  }
+
+  .navbar-toggler {
+    background-color: $background-color;
+  }
+}
+
+/* SUBTITULOS */
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.noticias,
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: $text-color;
+  padding: 50px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: $banner-bg;
+    filter: brightness(0.9);
+
+  
+}
+
+footer {
+  background-color: $navbar-bg;
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.destacados {
+  justify-content: space-around;
+  padding-top: 8px;
+}
+
+.icon {
+  height: $icon-height;
+  border: 2px $text-color;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  padding-top: 5px;
+}
+
+.card-squad {
+  border-radius: 200px;
+}
+
+.plantilla {
+  justify-content: space-around;
+  padding-top: 8px;
+
+  div {
+    border: none;
+  }
+}
+
+.card-body {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.dejanos {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.cont-carousel {
+  border: 0.7rem solid $border-color;
+}
+
+.ventas {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
