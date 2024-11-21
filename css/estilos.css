@@ -8,19 +8,21 @@
 }
 
 body {
-  background-color: white;
+  background-color: white; 
   position: relative;
   min-height: 100vh;
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 
 .titulo {
   text-align: center;
-  font-size: 6em;
+  font-size: 5em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin: 0;
   padding: 0;
   flex-grow: 1;
+  max-width: 100%;
 }
 
 /* BARRA DE NAVEGACION */
@@ -41,11 +43,11 @@ body {
   background-color: white;
 }
 
-/* SUBTITULOS */
+
 .subtitulo {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 3px;
 }
 
 .noticias,
@@ -53,15 +55,70 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 60px 20px; 
   background-size: cover;
   background-position: center;
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(23, 32, 42, 0.6156862745) 120%), url(../img/banner.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(23, 32, 42, 0.8)), 
+              url(../img/banner.jpg); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
   filter: brightness(0.9);
+  border-radius: 15px; 
+  box-sizing: border-box;
+  overflow: hidden; 
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+.banner:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); 
+}
+
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay; 
+  pointer-events: none;
+  animation: shimmer 3s infinite linear; 
+}
+.noticias:hover{
+  transform: scale(1.02); 
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); 
+
+}
+.noticias::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay; 
+  pointer-events: none;
+  animation: shimmer 3s infinite linear; 
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 
 footer {
   background-color: #17202a;
@@ -78,6 +135,7 @@ footer {
 .destacados {
   justify-content: space-around;
   padding-top: 8px;
+  max-width: 100%;
 }
 
 .icon {
@@ -85,10 +143,6 @@ footer {
   border: 2px white;
 }
 
-.last {
-  display: flex;
-  justify-content: center;
-}
 
 .card-img-top {
   padding-top: 5px;
@@ -101,6 +155,7 @@ footer {
 .plantilla {
   justify-content: space-around;
   padding-top: 8px;
+  max-width: 100%;
 }
 .plantilla div {
   border: none;
@@ -140,5 +195,31 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.last{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.last img{
+  max-width: 100%;
+}
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del logotipo */
+}
+.navbar .nav-link {
+  color: white; /* Color inicial */
+  text-decoration: none; /* Sin subrayado */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.navbar .nav-link:hover {
+  color: #f39c12; /* Cambiar el color al pasar el cursor */
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+}
+
 
 /*# sourceMappingURL=estilos.css.map */
